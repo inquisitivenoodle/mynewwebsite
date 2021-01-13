@@ -1,6 +1,6 @@
 +++
 author = "🍜 Inquisitive Noodle"
-categories = []
+categories = ["Linux Mint"]
 date = 2021-01-13T20:22:00Z
 description = "Installing Google Drive installed as a network online account in Linux Mint"
 draft = true
