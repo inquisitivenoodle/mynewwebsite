@@ -10,6 +10,10 @@ URL = "contact"
 name = "Contact"
 weight = 1
 [[menu.main]]
+name = "Raspberry Pi"
+url = "https://inquisitivenoodle.com/categories/raspberry-pi/"
+weight = 4
+[[menu.main]]
 URL = "tools"
 name = "tools"
 weight = 2
