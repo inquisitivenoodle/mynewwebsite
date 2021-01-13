@@ -1,10 +1,10 @@
 +++
-title = "My awesome blog post"
-image = "/images/post/post-3.jpg"
-author = "John Doe"
+author = "🍜 inquisitive noodle"
+categories = ["raspberry pi"]
 date = 2019-11-07T05:00:00Z
 description = "This is meta description"
-categories = ["SEO Learning"]
+image = "/images/post/post-3.jpg"
+title = "edited 1"
 type = "post"
 
 +++
