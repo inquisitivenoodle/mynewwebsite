@@ -10,17 +10,9 @@ URL = "contact"
 name = "Contact"
 weight = 1
 [[menu.main]]
-name = "Home Automation"
-url = "https://inquisitivenoodle.com/categories/home-automation/"
-weight = 2
-[[menu.main]]
-name = "Raspberry Pi"
-url = "https://inquisitivenoodle.com/categories/raspberry-pi/"
-weight = 1
-[[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 3
+weight = 1
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
