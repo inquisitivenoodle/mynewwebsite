@@ -5,3 +5,7 @@ tools:
   - name: ''
     image: ''
     link: ''
+menu:
+  main:
+    name: About
+    weight: 3
