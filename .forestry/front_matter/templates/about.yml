@@ -7,8 +7,8 @@ fields:
   label: tools
   fields:
   - type: text
-    name: title
-    label: title
+    name: About
+    label: About
   - type: field_group_list
     name: tool
     label: tool
