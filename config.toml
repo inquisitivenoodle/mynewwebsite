@@ -16,7 +16,7 @@ weight = ""
 [[menu.main]]
 URL = "https://inquisitivenoodle.com/categories/raspberry-pi/"
 name = "Raspberry Pi"
-weight = ""
+weight = "1"
 [[menu.main]]
 URL = "https://inquisitivenoodle.com/categories/linux-mint/"
 name = "Linux Mint"
