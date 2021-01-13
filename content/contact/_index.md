@@ -1,8 +1,7 @@
 ---
-title: "Contact Us"
-draft: false
-description : "this is meta description"
-image: "images/contact.svg"
----
+title: Contact Me
+description: Contact me using the form below
+image: images/contact.svg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.
+---
+You can contact me using the form below.  Your email address will never be passed to third parties or used for marketing.
