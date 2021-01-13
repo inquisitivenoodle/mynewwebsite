@@ -23,4 +23,5 @@ fields:
       name: link
       label: link
 pages:
+- data/about.yml
 - data/tools.yml
