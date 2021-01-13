@@ -1,23 +1,49 @@
 +++
 author = "🍜 inquisitive noodle"
-categories = ["home automation"]
-date = 2019-11-07T05:00:00Z
-description = "This is meta description"
+categories = ["raspberry pi", "home automation"]
+date = 2019-11-22T18:51:00Z
+description = "In this post, I detail out the steps for moving an installation from a microSD card to running off an external SSD drive. In this setup, I am connecting to the Raspberry Pi 4 remotely without the use of a dedicated monitor, keyboard or mouse. The external hard drive in this instance is an old laptop SSD drive with a simple USB 3.0 to SATA converter cable. "
 image = "/images/post/post-2.jpg"
-title = "Home Automation Post"
+title = "Installing Home Assistant HassOS onto an external hard drive connected to a Raspberry Pi 4"
 type = "post"
 
 +++
-Are you Developer and recently started your own business and Already made a website to ensure online presence and wants to reach more people. but you are not getting as much as response from your targeted customer or you are unable to reach them. SEO(Search engine optimization)is the cheapest way to reach your customer or client. After 2000 the Internet is more easy access to common people and most of the netizens to find out information search on google/yahoo/bing like a search engine. So if your site ranks at the top of the SERP for your target keywords then sure you will get more valuable traffic to your site and it will help you a lot to grow your business.
+If you haven't installed Raspberry Pi OS yet, please refer to this [post]().
 
-Above Paragraph, you see SERP or Keywords that are common SEO Term so Before starting learning SEO let's learn the term used by the SEO expert. It will smoothen your learning journey. Or if you are wishing to hire an SEO guy it will help you his task he/she doing and understand he/she going on the right path. So not making delay let dive…
+## Updating the Raspberry Pi 4 firmware
 
-**Algorithm:** “Algorithm is a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.” It is its definition. In SEO we basically mean A very sophisticated and complex program used by the search engine to find out data and indexing it, And when a user gives a data query this program also decides the best result to place in the SERP in order. All search engines use multiple algorithms combination on their data collection and result giving process in different stages.
+To clarify, the hard drive is not connected to start with. I booted up to the Raspberry Pi 4, and logged onto the Raspberry Pi Desktop from within [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). Then, I opened up a Terminal window by click the fourth icon in on the top left bar that looks like a black window with a blue title bar.
 
-**Algorithm Change:** All the search engine service providers always try to give the best results to their users. So they always working on updating, refreshing or making and implementing new algorithms. The search engine service provider never revealed the exact date of rolling out any updates or new algorithms to make an effective date. Normally they give a boundary of time like this week or this month, we are going to rolling out a major update or applying new this algorithm. They give this new algorithm a name and they always call it by the given name. Like, google spider, Google panda, etc. Most of the time After one to two week we can see and understand the update or change impact but sometimes it also happens quicker also.
+[![terminal icon in upper left navigation bar](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/terminal-icon.png "terminal icon in the upper left navigation bar.")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/terminal-icon.png)
 
-* Algorithm Update: Search Engines regularly making minor changes in their system they normally don’t give an official announcement. But SEO related blogs and journals give the news what the changes made. So Keep update regular visit this industry-related community is important. And when the Major update come You must observe your ranking behavior and if you find you've got the penalty then quickly take necessary step undereating the guidelines given by search engine company.
+Once in _Terminal,_ I executed the following command and confirmed Y when asked to proceed.
 
-* Algorithm Refresh: Search engine operator after a regular interval re-run the existing algorithm to find out the new spammer.
+    sudo rpi-update
 
-* New Algorithm: Improving search quality google and other search engines regularly bringing new algorithms. All new algorithm has its special purpose to serve in the total search engine working process.
+This updated the Raspberry PI firmware. Then I rebooted the Pi and reconnected back into the Raspberry Pi desktop.
+
+Once the Raspberry Pi had rebooted, I logged in and opened up a new _Terminal_ session and executed the following code to install the latest bootloader.
+
+    sudo rpi-eeprom-update -d -a
+
+Then, once again, I rebooted the Raspberry Pi.
+
+## Enable USB boot mode on the Raspberry Pi
+
+This time, after the reboot, I connected via [Putty](https://www.chiark.greenend.org.uk/\~sgtatham/putty/) to the Raspberry Pi 4, using the hostname _raspberrypi.local_ and after logging in, I ran:
+
+    sudo raspi-config
+
+I choose _6 Advanced Options_ then _A6 Boot Order_ then _B1 USB Boot._ Then I quit out raspi-config and rebooted the Raspberry Pi. After it came back up, I then powered it off.
+
+## Installing Home Assistant HassOS on the external hard drive
+
+I downloaded HassOS 5.5 64-bit for the Raspberry Pi 4, _hassos_rpi4_5.5.img.gz_, from the official [repo](https://github.com/home-assistant/operating-system/releases/tag/5.5).
+
+[![hassos rpi4 5.5 repo file](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/hassos-repo.png "hassos rpi4 5.5 repo file")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/hassos-repo.png)
+
+From there I used [BalenaEtcher](https://www.balena.io/etcher/) on my Windows PC to flash this to my SSD external hard drive, which was a 320GB FAT32. The program gives a warning for the SSD being larger than expected for a USB drive. I accepted the warning and then continued with imaging the drive. I ejected the drive properly.
+
+Next I plugged the SSD into the Raspberry Pi 4 and removed the microSD card and rebooted the machine. It took a while to boot up and I had to powercycle it once. After this I navigated to HassOS through a browser on [http://homeassistant:8123](http://homeassistant:8123) on my Windows PC, where I was prompted to create an account.
+
+N.B. Some SSD enclosures, such as Sabrent, have been reported as having issues. Here I used a [USB 3.0 to SATA cable](https://www.amazon.co.uk/gp/product/B01N2JIQR7) adapter.
