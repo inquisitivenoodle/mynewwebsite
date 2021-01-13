@@ -34,7 +34,7 @@ image = "images/banner/illustration.svg"
 title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
 [params.cta]
 description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
-enable = true
+enable = false
 image = "images/hugo-muscot.svg"
 title = "Get the best hugo templates"
 [params.cta.button]
@@ -61,5 +61,8 @@ preloader = ""
 [params.search]
 enable = true
 [[params.social]]
+icon = "ti-instagram"
+link = "https://www.instagram.com/inquisitivenoodle/"
+[[params.social]]
 icon = "ti-github"
-link = "#"
+link = "https://github.com/inquisitivenoodle/"
