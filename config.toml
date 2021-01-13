@@ -35,7 +35,7 @@ description = "raspberry pi, data and home automation"
 google_analitycs_id = ""
 google_tag_manager = ""
 home = "Home"
-logo = "images/logo.svg"
+logo = "images/inquisitivenoodlelogo.svg"
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 image = "images/banner/illustration.svg"
