@@ -8,4 +8,4 @@ tools:
 menu:
   main:
     name: About
-    weight: 3
+    weight: 4
