@@ -29,7 +29,7 @@ weight = "8"
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
 author = "🍜 inquisitive noodle"
-contact_form_action = "mailto:inquisitive.noodle@hotmail.com"
+contact_form_action = ""
 copyright = "&copy; 2021 inquisitivenoodle.com"
 description = "raspberry pi, data and home automation"
 google_analitycs_id = ""
