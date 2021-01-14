@@ -1,7 +1,7 @@
 ---
 title: Contact Me
-description: Contact me using the form below
-image: images/contact.svg
+description: Contact Me
+image: ''
 
 ---
-You can contact me using the form below.  Your email address will never be passed to third parties or used for marketing.
+You can contact me on inquisitive dot noodle at hotmail dot com.
