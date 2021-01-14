@@ -8,7 +8,7 @@ title = "Installing Home Assistant HassOS onto an external hard drive connected 
 type = "post"
 
 +++
-In this post, I detail out the steps for moving an installation from a microSD card to running off an external SSD drive. In this setup, I am connecting to the Raspberry Pi 4 remotely without the use of a dedicated monitor, keyboard or mouse. The external hard drive in this instance is an old laptop SSD drive with a simple USB 3.0 to SATA converter cable.
+In this post, I detail out the steps for moving an Raspbery OS installation from a microSD card to running off an external SSD drive and then installing HassOS. In this setup, I am connecting to the Raspberry Pi 4 remotely without the use of a dedicated monitor, keyboard or mouse. The external hard drive in this instance is an old laptop SSD drive with a simple USB 3.0 to SATA converter cable.
 
 If you haven't installed Raspberry Pi OS yet, please refer to this [post](https://inquisitivenoodle.com/installing-raspberry-pi-os-headless-on-raspberry-pi-4/ "Installing Raspberry Pi OS headless on a raspberry pi 4").
 
