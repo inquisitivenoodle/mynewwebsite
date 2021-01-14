@@ -8,7 +8,7 @@ title = "🍜 inquisitive noodle"
 [[menu.footer]]
 URL = "contact"
 name = "Contact"
-url = "mailto: inquisitivenoodle@hotmail.com"
+url = "mailto:inquisitivenoodle@hotmail.com"
 weight = 1
 [[menu.main]]
 URL = "contact"
