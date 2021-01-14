@@ -3,7 +3,7 @@ author = "🍜 inquisitive noodle"
 categories = ["raspberry pi"]
 date = 2020-11-21T14:16:00Z
 description = "Installing Raspberry Pi OS headless onto Raspberry Pi 4 with no monitor, keyboard or mouse"
-image = "/images/post/post-3.jpg"
+image = "/images/post/1ynZfcpC5ugreayN7-O08KnXRtllagSO_"
 title = "Installing Raspberry Pi OS headless onto Raspberry Pi 4"
 type = "post"
 
