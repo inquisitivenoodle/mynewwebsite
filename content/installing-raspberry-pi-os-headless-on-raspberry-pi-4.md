@@ -3,7 +3,7 @@ author = "🍜 inquisitive noodle"
 categories = ["raspberry pi"]
 date = 2020-11-21T14:16:00Z
 description = "Installing Raspberry Pi OS headless onto Raspberry Pi 4 with no monitor, keyboard or mouse"
-image = "/images/post/1ynZfcpC5ugreayN7-O08KnXRtllagSO_"
+image = ""
 title = "Installing Raspberry Pi OS headless onto Raspberry Pi 4"
 type = "post"
 
@@ -22,7 +22,7 @@ As I will be using a headless connection (no monitor, mouse or keyboard) I added
 
 I inserted the microSD card into the Raspberry Pi 4 and connected it via ethernet and then booted the device. Once the Pi had booted, I ran [Putty](https://www.chiark.greenend.org.uk/\~sgtatham/putty/), an SSH client, and connected to it on the _raspberrypi.local_ address.
 
-[![An image of the putty configuration screen](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/putty-login.png "putty configuration screen")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/putty-login.png)
+![putty configuration screen](/images/putty-login.PNG "putty configuration screen")
 
 I accepted the warning and then entered the login credentials to the default installation - username: _pi_, password: _raspberry_. At the terminal prompt then I ran:
 
@@ -30,31 +30,31 @@ I accepted the warning and then entered the login credentials to the default ins
 
 This launched the raspi-config menu, and I chose _5 Interfacing Options_.
 
-[![raspi config interfacing menu option](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/interfacing-option.png "interfacing option in the raspi-config menu")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/interfacing-option.png)
+![interfacing option in the raspi-config menu](/images/interfacing-option.PNG "interfacing option in the raspi-config menu")
 
 In the next menu, then I chose _P3 VNC_ and then I accepted turning the option on. I exited out of raspi-config back to the terminal. You can use the Tab key to jump from the menus to the "Select" and "Back" options and Enter to choose one once it's highlighted.
 
-[![raspi config VNC menu options](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/vnc-option.png "VNC option in the raspi-config interfacing options")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/vnc-option.png)
+![VNC option in the raspi-config interfacing options](/images/vnc-option.PNG "VNC option in the raspi-config interfacing options")
 
 ## Connecting into Raspberry PI desktop via VNC
 
 Next up in _raspi-config_ I choose _3 Boot Options_ and then _B1 Desktop / CLI_, then _B3 Desktop_.
 
-[![desktop boot options in raspi-config](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/desktop-boot-option.png "desktop boot option in the raspi-config boot options")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/desktop-boot-option.png)
+![desktop boot option in the raspi-config boot options](/images/desktop-boot-option.PNG "desktop boot option in the raspi-config boot options")
 
 Also, because no monitor will be attached. I set the screen resolution by going through _7 Advanced Options > A5 Resolution_ and then selected the _1920x1080_ option.
 
-[![screen resolution options in raspi-config](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/screen-resolution-option.png "screen resolution entries in raspi-config")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/screen-resolution-option.png)
+![screen resolution entries in raspi-config](/images/screen-resolution-option.PNG "screen resolution entries in raspi-config")
 
 Then I selected _Finish_ and then _Reboot_ to restart the Raspberry Pi.
 
 I downloaded [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/), launched it and connected to the Raspberry Pi 4 on the _raspberrypi.local_ address, using the same credentials as before - username: _pi_, password: _raspberry_.
 
-[![VNC login dialogue box](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/vnc-login.png "logging into raspberry pi via VNC")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/vnc-login.png)
+![logging into raspberry pi via VNC](/images/vnc-login.PNG "logging into raspberry pi via VNC")
 
 This allowed me to login to the desktop using the same credentials again. If you get a black background with a "_desktop cannot be displayed at this time"_ error message after authenticating on VNC, try changing the resolution to a lower one in the previous step.
 
-[![raspberry pi desktop login screen](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/desktop-login.png "raspberry pi desktop login screen")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/desktop-login.png)
+![raspberry pi desktop login screen](/images/desktop-login.png "raspberry pi desktop login screen")
 
 Following a successful login, the os then prompted me through a series of steps to secure the pi - such as changing the admin password.
 
@@ -62,7 +62,7 @@ Following a successful login, the os then prompted me through a series of steps 
 
 As part of the intial configuration dialogues, I was prompted to _Select a wireless network._ I chose the network name (SSID) and entered the password. The pi automatically connected to the network and this was reflected in the toolbar on the top right hand side, second notification icon in.
 
-[![wireless notification icon in upper right navigation bar](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/wireless-icon.png "wireless notification icon in upper right navigation bar")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/wireless-icon.png)
+![wireless notification icon in upper right navigation bar](/images/wireless-icon.PNG "wireless notification icon in upper right navigation bar")
 
 If you aren't going through the initial configuration the wireless network can be connected in the following ways:
 
@@ -75,7 +75,7 @@ The last step in the initial setup is to update the raspberry pi through a dialo
 
 You can achieve the same result by navigating to the _Terminal_ icon, the fourth one in on the top left bar that looks like a black window with a blue title bar.
 
-[![terminal icon in the upper left navigation bar](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/terminal-icon.png "terminal icon in the upper left navigation bar")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/terminal-icon.png)
+![terminal icon in the upper left navigation bar](/images/terminal-icon.PNG "terminal icon in the upper left navigation bar")
 
 Once _Terminal_ has opened, you can run the following commands:
 
