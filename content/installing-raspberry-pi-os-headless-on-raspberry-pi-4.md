@@ -2,12 +2,14 @@
 author = "🍜 inquisitive noodle"
 categories = ["raspberry pi"]
 date = 2020-11-21T14:16:00Z
-description = "Installing Raspberry Pi OS headless onto Raspberry Pi 4 with no monitor, keyboard or mouse"
+description = "In this post I will going through the steps of installing Raspberry Pi OS headless onto Raspberry Pi 4 with no monitor, keyboard or mouse."
 image = ""
 title = "Installing Raspberry Pi OS headless onto Raspberry Pi 4"
 type = "post"
 
 +++
+In this post I will going through the steps of installing Raspberry Pi OS headless onto Raspberry Pi 4 with no monitor, keyboard or mouse.
+
 ## Downloading the Raspberry Pi OS software
 
 Firstly, I downloaded [BalenaEtcher](https://www.balena.io/etcher/) imaging software for Windows. Then I downloaded the latest [Raspberry PI OS for Desktop](https://www.raspberrypi.org/software/operating-systems/) v5.4.
