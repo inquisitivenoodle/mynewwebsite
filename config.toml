@@ -8,23 +8,25 @@ title = "🍜 inquisitive noodle"
 [[menu.footer]]
 URL = "contact"
 name = "Contact"
+url = "mailto: inquisitivenoodle@hotmail.com"
+weight = 1
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+url = "mailto:inquisitivenoodle@hotmail.com"
+weight = 4
+[[menu.main]]
+URL = "https://inquisitivenoodle.com/categories/linux-mint/"
+name = "Linux Mint"
+weight = 3
+[[menu.main]]
+URL = "https://inquisitivenoodle.com/categories/raspberry-pi/"
+name = "Raspberry Pi"
 weight = 1
 [[menu.main]]
 URL = "https://inquisitivenoodle.com/categories/home-automation/"
 name = "Home Automation"
-weight = "2"
-[[menu.main]]
-URL = "https://inquisitivenoodle.com/categories/raspberry-pi/"
-name = "Raspberry Pi"
-weight = "1"
-[[menu.main]]
-URL = "https://inquisitivenoodle.com/categories/linux-mint/"
-name = "Linux Mint"
-weight = "3"
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = "8"
+weight = 2
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
