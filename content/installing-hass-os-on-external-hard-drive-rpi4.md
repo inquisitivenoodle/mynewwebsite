@@ -8,13 +8,15 @@ title = "Installing Home Assistant HassOS onto an external hard drive connected 
 type = "post"
 
 +++
-If you haven't installed Raspberry Pi OS yet, please refer to this [post]().
+In this post, I detail out the steps for moving an installation from a microSD card to running off an external SSD drive. In this setup, I am connecting to the Raspberry Pi 4 remotely without the use of a dedicated monitor, keyboard or mouse. The external hard drive in this instance is an old laptop SSD drive with a simple USB 3.0 to SATA converter cable.
+
+If you haven't installed Raspberry Pi OS yet, please refer to this [post](https://inquisitivenoodle.com/installing-raspberry-pi-os-headless-on-raspberry-pi-4/ "Installing Raspberry Pi OS headless on a raspberry pi 4").
 
 ## Updating the Raspberry Pi 4 firmware
 
 To clarify, the hard drive is not connected to start with. I booted up to the Raspberry Pi 4, and logged onto the Raspberry Pi Desktop from within [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). Then, I opened up a Terminal window by click the fourth icon in on the top left bar that looks like a black window with a blue title bar.
 
-[![terminal icon in upper left navigation bar](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/terminal-icon.png "terminal icon in the upper left navigation bar.")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/terminal-icon.png)
+![terminal icon in the upper left navigation bar.](/images/terminal-icon.PNG "terminal icon in the upper left navigation bar.")
 
 Once in _Terminal,_ I executed the following command and confirmed Y when asked to proceed.
 
@@ -40,7 +42,7 @@ I choose _6 Advanced Options_ then _A6 Boot Order_ then _B1 USB Boot._ Then I qu
 
 I downloaded HassOS 5.5 64-bit for the Raspberry Pi 4, _hassos_rpi4_5.5.img.gz_, from the official [repo](https://github.com/home-assistant/operating-system/releases/tag/5.5).
 
-[![hassos rpi4 5.5 repo file](https://github.com/inquisitivenoodle/mywebsite/raw/master/site/content/post/img/hassos-repo.png "hassos rpi4 5.5 repo file")](https://github.com/inquisitivenoodle/mywebsite/blob/master/site/content/post/img/hassos-repo.png)
+![hassos rpi4 5.5 repo file](/images/hassos-repo.PNG "hassos rpi4 5.5 repo file")
 
 From there I used [BalenaEtcher](https://www.balena.io/etcher/) on my Windows PC to flash this to my SSD external hard drive, which was a 320GB FAT32. The program gives a warning for the SSD being larger than expected for a USB drive. I accepted the warning and then continued with imaging the drive. I ejected the drive properly.
 
