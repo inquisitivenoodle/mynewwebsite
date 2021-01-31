@@ -2,7 +2,7 @@
 author = "inquisitive noodle"
 categories = ["Raspberry Pi"]
 date = 2021-01-31T13:31:00Z
-description = ""
+description = "n this post I will going through the steps of installing Raspberry Pi OS headless onto Raspberry Pi Zero W with no monitor, keyboard or mouse."
 image = ""
 title = "Installing Raspberry PI OS headless on a Raspberry Pi Zero W"
 type = "post"
