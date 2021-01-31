@@ -25,5 +25,6 @@ fields:
   label: type
   default: post
 pages:
+- content/building-a-simple-greenhouse-sensor-with-a-raspberry-pi-zero-w.md
 - content/installing-google-drive-on-linux-mint.md
 - content/installing-raspberry-pi-os-headless-on-a-raspberry-pi-zero-w.md
