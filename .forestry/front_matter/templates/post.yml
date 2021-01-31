@@ -26,3 +26,4 @@ fields:
   default: post
 pages:
 - content/installing-google-drive-on-linux-mint.md
+- content/installing-raspberry-pi-os-headless-on-a-raspberry-pi-zero-w.md
