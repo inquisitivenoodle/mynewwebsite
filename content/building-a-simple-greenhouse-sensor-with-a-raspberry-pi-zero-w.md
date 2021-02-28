@@ -60,6 +60,6 @@ I created the following script, called _dht22.py_:
 
 The sensor only measures every 2 seconds, so rather than have the script execute continuously, it sleeps for 3 seconds between measurements.
 
-![python script and output of dht22 sensor](/images/script.png "python script and output of dht22 sensor")
+![python script for a dht22 sensor](/images/script.png "python script for a dht22 sensor")
 
 In the next post, I will be passing the temperature and humidity values to a mosquitto MQTT broker.
