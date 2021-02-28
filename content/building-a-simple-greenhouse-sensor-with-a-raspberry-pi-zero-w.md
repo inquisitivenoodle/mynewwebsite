@@ -1,6 +1,6 @@
 +++
 author = "inquisitve noodle"
-categories = []
+categories = ["Raspberry Pi"]
 date = 2021-01-31T15:18:00Z
 description = "n this post I will going through the steps to build a simple greenhouse monitoring system for light, temperature and humidity with a Raspberry Pi Zero W"
 image = ""
