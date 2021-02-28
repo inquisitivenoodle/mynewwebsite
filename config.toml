@@ -14,10 +14,6 @@ weight = 1
 URL = "contact"
 name = "Contact"
 url = "mailto:inquisitivenoodle@hotmail.com"
-weight = 4
-[[menu.main]]
-URL = "https://inquisitivenoodle.com/categories/linux-mint/"
-name = "Linux Mint"
 weight = 3
 [[menu.main]]
 URL = "https://inquisitivenoodle.com/categories/raspberry-pi/"
